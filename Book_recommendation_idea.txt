@@ -1,0 +1,35 @@
+We are making a book reommendaiton review site
+
+steps for viewer
+
+1. Go on to website and enter a username
+    1.1. if it is thier first time, it will register their username and save it inside a database
+    1.2. if this username is already inside the database, countinue to step 5
+2. The website will ask for 5 books that they have read recently along with a rating from 1-10
+3. It will then give similar books and prompt them to see if they have read these books and if so, rate them 1-10 
+    3.1. Ideally they will rate 10 more books that they read and their ratings for them
+4. With the information, the website will prompt at least 5 book recommendations as well as a breif summary and give them links to them on project gutenberg (through the internet or ChatGpt) 
+    4.1. It will return to the homescreen
+5. On the homescreen, there will be two prompts: One for more Book Recommendations and One for User Comparison
+    5.1. Book Recommendations: there is a prompt for how many books you want to place into the database and it will then list out prompts to fill out with thier ratings
+        5.1.1. Next it will give 5 book recommendations and have the option to go to the homescreen or sign out
+    5.2. User Comparison: there is a prompt for a username to see how similar your reading taste is with another user in the database
+        5.2.1. By putting in their username, you can see the books, genres and other concepts that might be shared
+        5.2.2. They will be given book recommendations that intersecpt both user's interest and have the option to go to the homescreen or sign out 
+
+
+steps for code:
+
+1. Store the values of all usernames into a dictionary and have thier information saved
+    1.1. Be able to both create a new one if no previous user and sign in those that dictionary
+2. Have 5 different areas to prompt them for books alongside a slider or box for the ratings (1-10)
+3. Prompt gpt to create 10 books that they could read so that there is more information
+4. Prompt gpt with all the information and ask it to recommend 10 books
+    4.1. Look through project gutenberg to make sure at least 5 of the books are there 
+        4.1.1. If there isn't then prompt gpt again until there is at least 5
+    4.2. Choose those 5 books as well as the rest up to 5 books that are not in project gutenberg 
+        4.2.1. The choice of those 5 books could be random or chose by prompting GPT again
+    4.3. With the reocmmendations give a summary of all the books, giving priority to project gutenberg and askign GPT for the rest
+5. Homescreen will have two options leading them to different parts of the website
+    5.1. With the book recommendation, it will be similar to steps 2-4
+    5.2. It will search for the User and if found will prompt gpt with both sets of info to output books, genres and other concepts that might be shared

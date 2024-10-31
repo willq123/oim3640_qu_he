@@ -1,0 +1,17 @@
+This is the plan:
+
+we are making a book reommendaiton review site
+
+steps for viewer
+
+1. they go on to the website and create a username or relogin with the same username
+2. the website will ask what books (up to 5) you read recently and what is thier rating out of 10 for the book
+3. next it will give out 15 books that have a similar themes and ask them if they have read these books 
+    3.1 if yes then they will ask your rating out of 10 for these books
+    3.2 we will keep giving them similar book until they have recognized 10 of book
+4. with this information they will give out 5 books recommendation (that they have not read) and their summary that could found online/chatgpt
+5. we can then store what they have read as all as thier ratings out of 10 onto a database so they can have acess and share if they want
+6. if oyu know thier username you can also see how similar you are with other readers
+7. if oyu relogin with the same user name you can indicate books you read in that time and your rating of it and it give you more recommendations
+
+steps for code:

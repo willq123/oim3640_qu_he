@@ -1,187 +1,71 @@
 {
     "wqu": {
         "books": [
-            [
-                "Legend ",
-                "9"
-            ],
-            [
-                "Prodigy ",
-                "8"
-            ],
-            [
-                "The Hunger Games",
-                "8"
-            ],
-            [
-                "Peter and the starcatchers",
-                "9"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "9"
-            ],
-            [
-                "Legend ",
-                "9"
-            ],
-            [
-                "Prodigy ",
-                "8"
-            ],
-            [
-                "The Hunger Games",
-                "8"
-            ],
-            [
-                "Peter and the starcatchers",
-                "9"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "9"
-            ],
-            [
-                "Legend ",
-                "9"
-            ],
-            [
-                "Prodigy ",
-                "8"
-            ],
-            [
-                "The Hunger Games",
-                "8"
-            ],
-            [
-                "Peter and the starcatchers",
-                "9"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "9"
-            ],
-            [
-                "Legend ",
-                "9"
-            ],
-            [
-                "Prodigy ",
-                "8"
-            ],
-            [
-                "The Hunger Games",
-                "8"
-            ],
-            [
-                "Peter and the starcatchers",
-                "9"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "9"
-            ],
-            [
-                "Legend ",
-                "9"
-            ],
-            [
-                "Prodigy ",
-                "8"
-            ],
-            [
-                "The Hunger Games",
-                "8"
-            ],
-            [
-                "Peter and the starcatchers",
-                "9"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "9"
-            ],
-            [
-                "Legend ",
-                "9"
-            ],
-            [
-                "Prodigy ",
-                "8"
-            ],
-            [
-                "The Hunger Games",
-                "8"
-            ],
-            [
-                "Peter and the starcatchers",
-                "9"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "9"
-            ],
-            [
-                "Legend ",
-                "10"
-            ],
-            [
-                "Prodigy ",
-                "9"
-            ],
-            [
-                "The Hunger Games",
-                "7"
-            ],
-            [
-                "Peter and the starcatchers",
-                "10"
-            ],
-            [
-                "Peter and the Shadow Thieves",
-                "8"
-            ],
-            [
-                "Legend",
-                "7"
-            ],
-            [
-                "Prodigy",
-                "9"
-            ],
-            [
-                "Legend",
-                "4"
-            ],
-            [
-                "Prodigy",
-                "3"
-            ]
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)"
         ],
-        "recommended_books": []
+        "recommended_books": [
+            {
+                "Book title": "Divergent",
+                "Author": "Veronica Roth"
+            },
+            {
+                "Book title": "The Maze Runner",
+                "Author": "James Dashner"
+            },
+            {
+                "Book title": "The Selection",
+                "Author": "Kiera Cass"
+            }
+        ]
     },
     "wqu1": {
         "books": [
-            [
-                "Charlotte's Web",
-                "9"
-            ],
-            [
-                "Frog and Toad Are Friends",
-                "8"
-            ],
-            [
-                "Where the Wild Things Are",
-                "9"
-            ],
-            [
-                "Green Eggs and Ham",
-                "7"
-            ],
-            [
-                "The Giving Tree",
-                "2"
-            ]
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Peter and the starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Peter and the starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Peter and the starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)"
         ],
         "recommended_books": []
     }

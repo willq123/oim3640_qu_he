@@ -18,5 +18,26 @@
         </select>
         <button type="submit">Submit</button>
     </form>
+
+    <h2>Your Read Books:</h2>
+    <ul>
+        {% for book in read_books %}
+            <li>{{ book }}</li>
+        {% else %}
+            <li>No books read yet.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Recommendations:</h2>
+    <ul>
+        {% if recommendations %}
+            {% for recommendation in recommendations %}
+                <li>{{ recommendation['Book title'] }} by {{ recommendation['Author'] }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No recommendations available at this time.</li>
+        {% endif %}
+    </ul>
 </body>
 </html>
+</write_to_file>

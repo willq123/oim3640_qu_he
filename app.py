@@ -27,8 +27,20 @@ def get_book_recommendations(books_with_ratings, read_books):
         1. Books and Ratings
         2. Previous (if there are) Books and Ratings from user.json
     """
+    # Extract book titles and ratings
+    book_data = [book.split("  (Rating:") for book in books_with_ratings]
+    book_titles = []
+    book_ratings = []
+
+    for data in book_data:
+        if len(data) == 2:  # Ensure there are two parts
+            book_titles.append(data[0].strip())
+            book_ratings.append(data[1].strip(' )'))  # Get ratings without extra characters
+        else:
+            print(f"Unexpected format for book entry: {data}")  # Log unexpected formats
+
     prompt = (
-        f"Based on the following books and ratings: {books_with_ratings}, "
+        f"Based on the following books and ratings: {list(zip(book_titles, book_ratings))}, "
         f"and excluding the books the user has already read: {read_books}, "
         "recommend 3 new books in JSON format with the following structure: "
         "{'Book title': 'title', 'Author': 'author name'}. Response in JSON format and no additional text."
@@ -82,13 +94,32 @@ def signup():
     if request.method == 'POST':
         username = request.form['username']
         users = load_users()
+        print(f"Attempting to sign up user: {username}")  # Debugging statement
         if username in users:
             flash("Username already exists", "error")
             return redirect(url_for('signup'))
         users[username] = {"books": [], "recommended_books": []}  # Initialize with proper structure
+        print(f"Users before saving: {users}")  # Debugging statement
         save_users(users)
         return redirect(url_for('recommend_books', username=username))
     return render_template('signup.html')
+
+@app.route('/test', methods=['GET', 'POST'])
+def test():
+    """
+    Test route to register a user and verify user.json updates.
+    """
+    if request.method == 'POST':
+        username = request.form['username']
+        users = load_users()
+        if username in users:
+            message = "Username already exists."
+        else:
+            users[username] = {"books": [], "recommended_books": []}
+            save_users(users)
+            message = "User registered successfully."
+        return render_template('test.html', message=message)
+    return render_template('test.html')
 
 @app.route('/signin', methods=['GET', 'POST'])
 def signin():
@@ -116,7 +147,12 @@ def recommend_books(username):
     """
     n = request.args.get('n', default=5, type=int)  # Get n from query parameters
     if request.method == 'POST':
-        books_with_ratings = request.form.getlist('books')  # Expecting a list of books and ratings
+        books_with_ratings = []
+        for i in range(1, n + 1):
+            book_title = request.form.get(f'book{i}')
+            rating = request.form.get(f'rating{i}')
+            if book_title and rating:
+                books_with_ratings.append(f"{book_title} (Rating: {rating})")  # Format as needed
         users = load_users()
         if "books" in users[username]:
             users[username]["books"].extend(books_with_ratings)  # Add books to user's list
@@ -138,7 +174,16 @@ def show_recommendations(username):
     users = load_users()
     read_books = users[username]["books"]
     recommendations = get_book_recommendations(read_books, read_books)
-    if not recommendations:
+    
+    # Debugging statement to check recommendations
+    print(f"Recommendations for {username}: {recommendations}")  # Debugging statement
+    
+    # Save recommendations to user.json
+    if recommendations and isinstance(recommendations, list):
+        users[username]["recommended_books"] = recommendations  # Save recommendations
+        save_users(users)  # Save changes to user.json
+    
+    if not recommendations or isinstance(recommendations, str):  # Check if recommendations are empty or a string error
         return render_template('show_recommendations.html', username=username, message="No recommendations available at this time.")
     return render_template('show_recommendations.html', username=username, recommendations=recommendations)
 
@@ -160,7 +205,10 @@ def more_recommendations(username):
     if request.method == 'POST':
         n = int(request.form['num_books'])
         return redirect(url_for('recommend_books', username=username, n=n))  # Pass n as a query parameter
-    return render_template('more_recommendations.html', username=username)
+    users = load_users()
+    read_books = users[username]["books"]
+    recommendations = get_book_recommendations(read_books, read_books)
+    return render_template('more_recommendations.html', username=username, read_books=read_books, recommendations=recommendations)
 
 @app.route('/similarity/<username>', methods=['GET', 'POST'])
 def similarity(username):
@@ -180,6 +228,13 @@ def user_similarity(username):
     There will be a button to return to '/homepage/<username>'
     """
     return render_template('user_similarity.html', username=username)
+
+@app.route('/welcome/<username>', methods=['GET', 'POST'])
+def welcome(username):
+    """
+    Welcome the user and provide options for further actions.
+    """
+    return render_template('welcome.html', username=username)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Similarity</title>
+</head>
+<body>
+    <h1>User Similarity</h1>
+    <p>Similarity: {{ similarity_percentage }}%</p>
+    <p>Recommended Book: {{ recommended_book }}</p>
+    <a href="{{ url_for('homepage', username=username) }}"><button>Return to Homepage</button></a>
+</body>
+</html>

@@ -1,1 +1,188 @@
-{"wqu": {"books": [["Legend ", "9"], ["Prodigy ", "8"], ["The Hunger Games", "8"], ["Peter and the starcatchers", "9"], ["Peter and the Shadow Thieves", "9"], ["Legend ", "9"], ["Prodigy ", "8"], ["The Hunger Games", "8"], ["Peter and the starcatchers", "9"], ["Peter and the Shadow Thieves", "9"], ["Legend ", "9"], ["Prodigy ", "8"], ["The Hunger Games", "8"], ["Peter and the starcatchers", "9"], ["Peter and the Shadow Thieves", "9"], ["Legend ", "9"], ["Prodigy ", "8"], ["The Hunger Games", "8"], ["Peter and the starcatchers", "9"], ["Peter and the Shadow Thieves", "9"], ["Legend ", "9"], ["Prodigy ", "8"], ["The Hunger Games", "8"], ["Peter and the starcatchers", "9"], ["Peter and the Shadow Thieves", "9"], ["Legend ", "9"], ["Prodigy ", "8"], ["The Hunger Games", "8"], ["Peter and the starcatchers", "9"], ["Peter and the Shadow Thieves", "9"]]}}
+{
+    "wqu": {
+        "books": [
+            [
+                "Legend ",
+                "9"
+            ],
+            [
+                "Prodigy ",
+                "8"
+            ],
+            [
+                "The Hunger Games",
+                "8"
+            ],
+            [
+                "Peter and the starcatchers",
+                "9"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "9"
+            ],
+            [
+                "Legend ",
+                "9"
+            ],
+            [
+                "Prodigy ",
+                "8"
+            ],
+            [
+                "The Hunger Games",
+                "8"
+            ],
+            [
+                "Peter and the starcatchers",
+                "9"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "9"
+            ],
+            [
+                "Legend ",
+                "9"
+            ],
+            [
+                "Prodigy ",
+                "8"
+            ],
+            [
+                "The Hunger Games",
+                "8"
+            ],
+            [
+                "Peter and the starcatchers",
+                "9"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "9"
+            ],
+            [
+                "Legend ",
+                "9"
+            ],
+            [
+                "Prodigy ",
+                "8"
+            ],
+            [
+                "The Hunger Games",
+                "8"
+            ],
+            [
+                "Peter and the starcatchers",
+                "9"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "9"
+            ],
+            [
+                "Legend ",
+                "9"
+            ],
+            [
+                "Prodigy ",
+                "8"
+            ],
+            [
+                "The Hunger Games",
+                "8"
+            ],
+            [
+                "Peter and the starcatchers",
+                "9"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "9"
+            ],
+            [
+                "Legend ",
+                "9"
+            ],
+            [
+                "Prodigy ",
+                "8"
+            ],
+            [
+                "The Hunger Games",
+                "8"
+            ],
+            [
+                "Peter and the starcatchers",
+                "9"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "9"
+            ],
+            [
+                "Legend ",
+                "10"
+            ],
+            [
+                "Prodigy ",
+                "9"
+            ],
+            [
+                "The Hunger Games",
+                "7"
+            ],
+            [
+                "Peter and the starcatchers",
+                "10"
+            ],
+            [
+                "Peter and the Shadow Thieves",
+                "8"
+            ],
+            [
+                "Legend",
+                "7"
+            ],
+            [
+                "Prodigy",
+                "9"
+            ],
+            [
+                "Legend",
+                "4"
+            ],
+            [
+                "Prodigy",
+                "3"
+            ]
+        ],
+        "recommended_books": []
+    },
+    "wqu1": {
+        "books": [
+            [
+                "Charlotte's Web",
+                "9"
+            ],
+            [
+                "Frog and Toad Are Friends",
+                "8"
+            ],
+            [
+                "Where the Wild Things Are",
+                "9"
+            ],
+            [
+                "Green Eggs and Ham",
+                "7"
+            ],
+            [
+                "The Giving Tree",
+                "2"
+            ]
+        ],
+        "recommended_books": []
+    }
+}

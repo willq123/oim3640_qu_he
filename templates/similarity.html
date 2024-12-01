@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Similarity</title>
+</head>
+<body>
+    <h1>Find Similar Users</h1>
+    <form method="POST">
+        <label for="other_username">Enter another username:</label>
+        <input type="text" id="other_username" name="other_username" required>
+        <button type="submit">Find Similarity</button>
+    </form>
+    <a href="{{ url_for('homepage', username=username) }}"><button>Return to Homepage</button></a>
+</body>
+</html>

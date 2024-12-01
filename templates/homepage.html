@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <a href="{{ url_for('more_recommendations', username=username) }}"><button>Another Recommendation</button></a>
+    <a href="{{ url_for('similarity', username=username) }}"><button>Similarity</button></a>
+    <a href="{{ url_for('index') }}"><button>Sign Out</button></a>
+</body>
+</html>

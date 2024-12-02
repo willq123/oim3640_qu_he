@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPT Test</title>
+    <title>Test User Registration</title>
 </head>
 <body>
-    <h1>Test GPT API</h1>
-    <form method="POST">
-        <label for="user_input">Enter your query:</label>
-        <input type="text" id="user_input" name="user_input" required>
-        <button type="submit">Submit</button>
+    <h1>Test User Registration</h1>
+    <form action="/test" method="post">
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Register User</button>
     </form>
-    {% if gpt_response %}
-        <h2>Response from GPT:</h2>
-        <p>{{ gpt_response }}</p>
-    {% endif %}
-    {% if error %}
-        <h2>Error:</h2>
-        <p>{{ error }}</p>
+    {% if message %}
+        <p>{{ message }}</p>
     {% endif %}
 </body>
 </html>
-</write_to_file>

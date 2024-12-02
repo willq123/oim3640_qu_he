@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify, flash
+from flask import Flask, render_template, request, redirect, url_for, jsonify, flash, get_flashed_messages
 import json
 import os
 import openai
@@ -27,17 +27,19 @@ def get_book_recommendations(books_with_ratings, read_books):
         1. Books and Ratings
         2. Previous (if there are) Books and Ratings from user.json
     """
-
-    book_data = [book.split("  (Rating:") for book in books_with_ratings]
     book_titles = []
     book_ratings = []
 
-    for data in book_data:
-        if len(data) == 2:  # Ensure there are two parts
-            book_titles.append(data[0].strip())
-            book_ratings.append(data[1].strip(' )'))  # Get ratings without extra characters
+    for book in books_with_ratings:
+        book_data = book.rsplit(" (Rating:", 1)
+            book_titles.append(book_data[0].strip())
+            book_ratings.append(book_data[1].strip(' )'))  # Get ratings without extra characters
         else:
-            print(f"Unexpected format for book entry: {data}")  # Log unexpected formats
+            print(f"Unexpected format for book entry: {book}")  # Log unexpected formats
+
+    if not book_titles or not book_ratings:
+        print("Book titles or ratings are empty")  # Log if titles or ratings are empty
+
 
     prompt = (
         f"Based on the following books and ratings: {list(zip(book_titles, book_ratings))}, "
@@ -107,6 +109,7 @@ def calculate_similarity_and_recommendation(user1_books, user2_books):
     except Exception as e:
         print(f"API Call Error: {e}")  # Debugging statement
         return render_template('error.html', error=str(e))
+
 @app.route('/')
 def index():
     """
@@ -126,15 +129,16 @@ def signup():
     if request.method == 'POST':
         username = request.form['username']
         users = load_users()
-        print(f"Attempting to sign up user: {username}")  # Debugging statement
         if username in users:
             flash("Username already exists", "error")
             return redirect(url_for('signup'))
         users[username] = {"books": [], "recommended_books": []}  # Initialize with proper structure
-        print(f"Users before saving: {users}")  # Debugging statement
         save_users(users)
         return redirect(url_for('recommend_books', username=username))
-    return render_template('signup.html')
+    
+    # Retrieve flashed messages and extract the message part
+    error = get_flashed_messages()
+    return render_template('signup.html', error=error)
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
@@ -250,6 +254,10 @@ def more_recommendations(username):
     users = load_users()
     read_books = users[username]["books"]
     recommendations = get_book_recommendations(read_books, read_books)
+    
+    # Debugging statement to check recommendations
+    print(f"Recommendations for {username}: {recommendations}")  # Debugging statement
+    
     return render_template('more_recommendations.html', username=username, read_books=read_books, recommendations=recommendations)
 
 @app.route('/similarity/<username>', methods=['GET', 'POST'])

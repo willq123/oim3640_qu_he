@@ -10,50 +10,33 @@
             "the giver (Rating: 2)",
             "Prodigy (Rating: 4)",
             "The Hunger Games (Rating: 4)",
-            "The Hunger Games (Rating: 4)",
             "The Fault in Our Stars (Rating: 5)",
-            "Percy Jackson & the Olympians: The Lightning Thief (Rating: 4)",
-            "The Chronicles of Narnia (Rating: 3)"
+            "Percy Jackson & the Olympians: The Lightning Thief (Rating: 4)"
         ],
         "recommended_books": [
-            {
-                "Book title": "To Kill a Mockingbird",
-                "Author": "Harper Lee",
-                "ISBN": "0895774356",
-                "Link": "https://openlibrary.org/works/OL3140822W"
-            },
-            {
-                "Book title": "The Catcher in the Rye",
-                "Author": "J.D. Salinger",
-                "ISBN": "9788483023655",
-                "Link": "https://openlibrary.org/works/OL3335245W"
-            },
             {
                 "Book title": "Harry Potter and the Sorcerer's Stone",
                 "Author": "J.K. Rowling",
                 "ISBN": "9780439286237",
                 "Link": "https://openlibrary.org/works/OL15141632W"
+            },
+            {
+                "Book title": "The Book Thief",
+                "Author": "Markus Zusak",
+                "ISBN": "1407037218",
+                "Link": "https://openlibrary.org/works/OL5819456W"
+            },
+            {
+                "Book title": "To Kill a Mockingbird",
+                "Author": "Harper Lee",
+                "ISBN": "0895774356",
+                "Link": "https://openlibrary.org/works/OL3140822W"
             }
         ]
     },
     "wqu1": {
         "books": [
-            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
-            "The Book Thief (Rating: 3)",
-            "Legend (Rating: 4)",
-            "Prodigy (Rating: 5)",
-            "The Maze Runner (Rating: 4)",
-            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
-            "The Book Thief (Rating: 3)",
-            "Legend (Rating: 4)",
-            "Prodigy (Rating: 5)",
-            "The Maze Runner (Rating: 4)",
-            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
-            "The Book Thief (Rating: 3)",
-            "Legend (Rating: 4)",
-            "Prodigy (Rating: 5)",
-            "The Maze Runner (Rating: 4)",
-            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
+            "Harry Potter and the Sorcerers Stone (Rating: 4)",
             "The Book Thief (Rating: 3)",
             "Legend (Rating: 4)",
             "Prodigy (Rating: 5)",

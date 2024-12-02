@@ -189,7 +189,10 @@ def recommend_books(username):
             book_title = request.form.get(f'book{i}')
             rating = request.form.get(f'rating{i}')
             if book_title and rating:
-                books_with_ratings.append(f"{book_title} (Rating: {rating})")  # Format as needed
+                # Check if the book already exists before adding
+                existing_books = [b.split(" (Rating:")[0].strip() for b in users[username]["books"]]
+                if book_title not in existing_books:
+                    books_with_ratings.append(f"{book_title} (Rating: {rating})")  # Format as needed
         users = load_users()
         if "books" in users[username]:
             users[username]["books"].extend(books_with_ratings)  # Add books to user's list
@@ -249,12 +252,13 @@ def more_recommendations(username):
     Prompts user for number of new books to input
     Directs them towards '/recommend_books/<username>' with n being the number of new books
     """
+    users = load_users()
+    print(f"User {username} has read the following books: {users[username]['books']}")
     if request.method == 'POST':
         n = int(request.form['num_books'])
         return redirect(url_for('recommend_books', username=username, n=n))  # Pass n parameter for how many books
-    users = load_users()
-    read_books = users[username]["books"]
-    recommendations = get_book_recommendations(read_books, read_books)
+    read_books = users[username]['books']
+    recommendations = users[username]["recommended_books"]  # Retrieve recommendations from user.json
         
     return render_template('more_recommendations.html', username=username, read_books=read_books, recommendations=recommendations)
 

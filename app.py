@@ -27,7 +27,6 @@ def get_book_recommendations(books_with_ratings, read_books):
         1. Books and Ratings
         2. Previous (if there are) Books and Ratings from user.json
     """
-    # Extract book titles and ratings
     book_data = [book.split("  (Rating:") for book in books_with_ratings]
     book_titles = []
     book_ratings = []
@@ -72,9 +71,41 @@ def check_books_in_open_library(book_title):
     if response.status_code == 200:
         data = response.json()
         if data['numFound'] > 0:
-            return data['docs'][0]['isbn'][0] if 'isbn' in data['docs'][0] else False
-    return False
+            isbn = data['docs'][0]['isbn'][0] if 'isbn' in data['docs'][0] else False
+            link = f"https://openlibrary.org{data['docs'][0]['key']}" if 'key' in data['docs'][0] else None
+            return isbn, link
+    return False, None
 
+def calculate_similarity_and_recommendation(user1_books, user2_books):
+    """
+    Calculate the similarity percentage between two users' books and generate a book recommendation.
+    """
+    # Prepare the prompt for the GPT API
+    prompt = (
+        f"User 1 has read: {user1_books}. User 2 has read: {user2_books}. "
+        "Calculate the percentage similarity based on the books read and recommend one book with the author. "
+        "Return the result in the following format: "
+        "{'percent Similarity': '%', 'Book title': 'title', 'Author': 'author name'}. Response in JSON format and no additional text."
+    )
+    
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}]
+        )
+        
+        result = response['choices'][0]['message']['content']
+        print(f"Raw result from API: {result}")  # Debugging statement
+        
+        try:
+            result_json = json.loads(result)
+            return result_json
+        except json.JSONDecodeError as e:
+            print(f"JSON Decode Error: {e}")  # Debugging statement
+            return render_template('error.html', error=str(e))
+    except Exception as e:
+        print(f"API Call Error: {e}")  # Debugging statement
+        return render_template('error.html', error=str(e))
 @app.route('/')
 def index():
     """
@@ -178,6 +209,14 @@ def show_recommendations(username):
     # Debugging statement to check recommendations
     print(f"Recommendations for {username}: {recommendations}")  # Debugging statement
     
+    # Verify each recommended book and get ISBN
+    for recommendation in recommendations:
+        book_title = recommendation['Book title']
+        isbn, link = check_books_in_open_library(book_title)
+        if isbn:
+            recommendation['ISBN'] = isbn
+            recommendation['Link'] = link
+
     # Save recommendations to user.json
     if recommendations and isinstance(recommendations, list):
         users[username]["recommended_books"] = recommendations  # Save recommendations
@@ -216,25 +255,34 @@ def similarity(username):
     Prompt user for another user within the database
     After submitting, it will direct them to '/user_similarity/<username>/<other_username>'
     """
+    if request.method == 'POST':
+        other_username = request.form['other_username']
+        print(f"Current user: {username}, Other user: {other_username}")  # Debugging statement
+        users = load_users()
+        print(f"Users in database: {users.keys()}")  # Debugging statement
+        if other_username not in users:
+            flash("User does not exist", "error")
+            return redirect(url_for('similarity', username=username))
+        
+        user1_books = users[username]["books"]
+        user2_books = users[other_username]["books"]
+        print(f"User 1 books: {user1_books}")  # Debugging statement
+        print(f"User 2 books: {user2_books}")  # Debugging statement
+        
+        similarity_result = calculate_similarity_and_recommendation(user1_books, user2_books)
+        print(f"Similarity result: {similarity_result}")  # Debugging statement
+        
+        # Retrieve ISBN and link for the recommended book
+        book_title = similarity_result['Book title']
+        isbn, link = check_books_in_open_library(book_title)
+        if isbn:
+            similarity_result['ISBN'] = isbn
+            similarity_result['Link'] = link
+        
+        return render_template('user_similarity.html', username=username, other_username=other_username, similarity=similarity_result)
+    
     return render_template('similarity.html', username=username)
-
-@app.route('/user_similarity/<username>', methods=['GET', 'POST'])
-def user_similarity(username):
-    """
-    Take both username data and input into GPT API and display % similarity and 1 book recommendation
-    Book recommendation will be verified with check_books_in_open_library function
-    If there are no recommendations, it will repeat the process one more time
-    After the second time, it will display "No recommendations available at this time."
-    There will be a button to return to '/homepage/<username>'
-    """
-    return render_template('user_similarity.html', username=username)
-
-@app.route('/welcome/<username>', methods=['GET', 'POST'])
-def welcome(username):
-    """
-    Welcome the user and provide options for further actions.
-    """
-    return render_template('welcome.html', username=username)
 
 if __name__ == '__main__':
     app.run(debug=True)
+

@@ -5,7 +5,7 @@ import openai
 import requests
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Required for session management
+app.secret_key = 'your_secret_key'  
 
 openai.api_key = os.getenv("OPENAI_API_KEY")  
 

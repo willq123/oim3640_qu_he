@@ -32,6 +32,7 @@ def get_book_recommendations(books_with_ratings, read_books):
 
     for book in books_with_ratings:
         book_data = book.rsplit(" (Rating:", 1)
+        if len(book_data) == 2:  # Ensure there are two parts
             book_titles.append(book_data[0].strip())
             book_ratings.append(book_data[1].strip(' )'))  # Get ratings without extra characters
         else:
@@ -250,14 +251,11 @@ def more_recommendations(username):
     """
     if request.method == 'POST':
         n = int(request.form['num_books'])
-        return redirect(url_for('recommend_books', username=username, n=n))  # Pass n as a query parameter
+        return redirect(url_for('recommend_books', username=username, n=n))  # Pass n parameter for how many books
     users = load_users()
     read_books = users[username]["books"]
     recommendations = get_book_recommendations(read_books, read_books)
-    
-    # Debugging statement to check recommendations
-    print(f"Recommendations for {username}: {recommendations}")  # Debugging statement
-    
+        
     return render_template('more_recommendations.html', username=username, read_books=read_books, recommendations=recommendations)
 
 @app.route('/similarity/<username>', methods=['GET', 'POST'])

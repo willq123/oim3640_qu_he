@@ -1,66 +1,31 @@
 {
     "wqu": {
         "books": [
-            "Green Eggs and Ham (Rating: 1)",
+            "Green Eggs and Ham (Rating: 2)",
             "Divergent (Rating: 4)",
             "The Outsiders (Rating: 5)",
             "The Maze Runner (Rating: 5)",
             "Peter and the Starcatchers (Rating: 4)",
-            "Legend (Rating: 5)",
-            "the giver (Rating: 2)",
-            "Prodigy (Rating: 4)",
-            "The Hunger Games (Rating: 4)",
-            "The Fault in Our Stars (Rating: 5)",
-            "Percy Jackson & the Olympians: The Lightning Thief (Rating: 4)"
+            "The Fault in Our Stars (Rating: 4)"
         ],
         "recommended_books": [
-            {
-                "Book title": "Harry Potter and the Sorcerer's Stone",
-                "Author": "J.K. Rowling",
-                "ISBN": "9780439286237",
-                "Link": "https://openlibrary.org/works/OL15141632W"
-            },
-            {
-                "Book title": "The Book Thief",
-                "Author": "Markus Zusak",
-                "ISBN": "1407037218",
-                "Link": "https://openlibrary.org/works/OL5819456W"
-            },
             {
                 "Book title": "To Kill a Mockingbird",
                 "Author": "Harper Lee",
                 "ISBN": "0895774356",
                 "Link": "https://openlibrary.org/works/OL3140822W"
-            }
-        ]
-    },
-    "wqu1": {
-        "books": [
-            "Harry Potter and the Sorcerers Stone (Rating: 4)",
-            "The Book Thief (Rating: 3)",
-            "Legend (Rating: 4)",
-            "Prodigy (Rating: 5)",
-            "The Maze Runner (Rating: 4)",
-            "Divergent  (Rating: 5)"
-        ],
-        "recommended_books": [
+            },
+            {
+                "Book title": "The Great Gatsby",
+                "Author": "F. Scott Fitzgerald",
+                "ISBN": "0785839992",
+                "Link": "https://openlibrary.org/works/OL468431W"
+            },
             {
                 "Book title": "The Hunger Games",
                 "Author": "Suzanne Collins",
                 "ISBN": "9780545114073",
                 "Link": "https://openlibrary.org/works/OL5735363W"
-            },
-            {
-                "Book title": "The Fault in Our Stars",
-                "Author": "John Green",
-                "ISBN": "0143571621",
-                "Link": "https://openlibrary.org/works/OL16444438W"
-            },
-            {
-                "Book title": "Percy Jackson & the Olympians: The Lightning Thief",
-                "Author": "Rick Riordan",
-                "ISBN": "9780606374002",
-                "Link": "https://openlibrary.org/works/OL17054790W"
             }
         ]
     }

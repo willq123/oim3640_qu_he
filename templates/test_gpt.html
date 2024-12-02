@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test GPT API</title>
+</head>
+<body>
+    <h1>Test GPT API</h1>
+    <form action="/test_gpt" method="post">
+        <label for="input">Enter your prompt:</label>
+        <input type="text" id="input" name="input" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response">
+        {% if response %}
+            <h2>Response:</h2>
+            <p>{{ response }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Find Similar Users</h1>
-    <form method="POST">
+    <form method="POST" action="{{ url_for('similarity', username=username) }}">
         <label for="other_username">Enter another username:</label>
         <input type="text" id="other_username" name="other_username" required>
         <button type="submit">Find Similarity</button>

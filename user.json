@@ -1,72 +1,119 @@
 {
     "wqu": {
         "books": [
-            "Legend  (Rating: 5)",
-            "Prodigy  (Rating: 4)",
-            "The Hunger Games (Rating: 5)",
+            "Green Eggs and Ham (Rating: 1)",
+            "Divergent (Rating: 4)",
+            "The Outsiders (Rating: 5)",
+            "The Maze Runner (Rating: 5)",
             "Peter and the Starcatchers (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 5)",
-            "Prodigy  (Rating: 4)",
-            "The Hunger Games (Rating: 5)",
-            "Peter and the Starcatchers (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 5)",
-            "Prodigy  (Rating: 4)",
-            "The Hunger Games (Rating: 5)",
-            "Peter and the Starcatchers (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 5)",
-            "Prodigy  (Rating: 4)",
-            "The Hunger Games (Rating: 5)",
-            "Peter and the Starcatchers (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 4)",
-            "Prodigy  (Rating: 5)",
-            "The Hunger Games (Rating: 3)",
-            "Legend  (Rating: 3)",
+            "Legend (Rating: 5)",
+            "the giver (Rating: 2)",
+            "Prodigy (Rating: 4)",
             "The Hunger Games (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 3)",
             "The Hunger Games (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 3)",
-            "The Hunger Games (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)"
+<<<<<<< Updated upstream
+            "The Fault in Our Stars (Rating: 5)",
+            "Percy Jackson & the Olympians: The Lightning Thief (Rating: 4)"
         ],
         "recommended_books": [
             {
-                "Book title": "Divergent",
-                "Author": "Veronica Roth"
+                "Book title": "Harry Potter and the Sorcerer's Stone",
+                "Author": "J.K. Rowling",
+                "ISBN": "9780439286237",
+                "Link": "https://openlibrary.org/works/OL15141632W"
+            },
+            {
+                "Book title": "The Book Thief",
+                "Author": "Markus Zusak",
+                "ISBN": "1407037218",
+                "Link": "https://openlibrary.org/works/OL5819456W"
+            },
+            {
+                "Book title": "To Kill a Mockingbird",
+                "Author": "Harper Lee",
+                "ISBN": "0895774356",
+                "Link": "https://openlibrary.org/works/OL3140822W"
+=======
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "green eggs and ham (Rating: 4)",
+            "The Maze Runner (Rating: 4)"
+        ],
+        "recommended_books": [
+            {
+                "Book title": "The Hunger Games",
+                "Author": "Suzanne Collins"
+            },
+            {
+                "Book title": "Green Eggs and Ham",
+                "Author": "Dr. Seuss"
             },
             {
                 "Book title": "The Maze Runner",
                 "Author": "James Dashner"
-            },
-            {
-                "Book title": "The Selection",
-                "Author": "Kiera Cass"
+>>>>>>> Stashed changes
             }
         ]
     },
     "wqu1": {
         "books": [
-            "Legend  (Rating: 4)",
-            "Prodigy  (Rating: 5)",
-            "The Hunger Games (Rating: 3)",
-            "Peter and the starcatchers (Rating: 4)",
+            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
+            "The Book Thief (Rating: 3)",
+            "Legend (Rating: 4)",
+            "Prodigy (Rating: 5)",
+            "The Maze Runner (Rating: 4)",
+            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
+            "The Book Thief (Rating: 3)",
+            "Legend (Rating: 4)",
+            "Prodigy (Rating: 5)",
+            "The Maze Runner (Rating: 4)",
+            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
+            "The Book Thief (Rating: 3)",
+            "Legend (Rating: 4)",
+            "Prodigy (Rating: 5)",
+            "The Maze Runner (Rating: 4)",
+            "\"Harry Potter and the Sorcerer's Stone (Rating: 4)",
+            "The Book Thief (Rating: 3)",
+            "Legend (Rating: 4)",
+            "Prodigy (Rating: 5)",
+            "The Maze Runner (Rating: 4)",
+            "Divergent  (Rating: 5)"
+        ],
+<<<<<<< Updated upstream
+        "recommended_books": [
+            {
+                "Book title": "The Hunger Games",
+                "Author": "Suzanne Collins",
+                "ISBN": "9780545114073",
+                "Link": "https://openlibrary.org/works/OL5735363W"
+            },
+            {
+                "Book title": "The Fault in Our Stars",
+                "Author": "John Green",
+                "ISBN": "0143571621",
+                "Link": "https://openlibrary.org/works/OL16444438W"
+            },
+            {
+                "Book title": "Percy Jackson & the Olympians: The Lightning Thief",
+                "Author": "Rick Riordan",
+                "ISBN": "9780606374002",
+                "Link": "https://openlibrary.org/works/OL17054790W"
+            }
+        ]
+=======
+        "recommended_books": []
+    },
+    "wqu8": {
+        "books": [
             "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 4)",
-            "Prodigy  (Rating: 5)",
             "The Hunger Games (Rating: 3)",
-            "Peter and the starcatchers (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 4)",
-            "Prodigy  (Rating: 5)",
-            "The Hunger Games (Rating: 3)",
-            "Peter and the starcatchers (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)"
+            "green eggs and ham (Rating: 4)",
+            "Legend (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 5)"
         ],
         "recommended_books": []
+>>>>>>> Stashed changes
     }
 }

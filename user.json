@@ -6,21 +6,46 @@
             "The Hunger Games (Rating: 5)",
             "Peter and the Starcatchers (Rating: 4)",
             "Peter and the Shadow Thieves (Rating: 5)",
-            "charlottes web (Rating: 4)",
-            "Divergent  (Rating: 5)"
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 5)",
+            "Prodigy  (Rating: 4)",
+            "The Hunger Games (Rating: 5)",
+            "Peter and the Starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 3)",
+            "The Hunger Games (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)"
         ],
         "recommended_books": [
             {
-                "Book title": "The Hunger Games",
-                "Author": "Suzanne Collins"
+                "Book title": "Divergent",
+                "Author": "Veronica Roth"
             },
             {
-                "Book title": "Peter and the Shadow Thieves",
-                "Author": "Dave Barry"
+                "Book title": "The Maze Runner",
+                "Author": "James Dashner"
             },
             {
-                "Book title": "charlottes web",
-                "Author": "E.B. White"
+                "Book title": "The Selection",
+                "Author": "Kiera Cass"
             }
         ]
     },
@@ -30,160 +55,28 @@
             "Prodigy  (Rating: 5)",
             "The Hunger Games (Rating: 3)",
             "Peter and the starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Peter and the starcatchers (Rating: 4)",
+            "Peter and the Shadow Thieves (Rating: 5)",
+            "Legend  (Rating: 4)",
+            "Prodigy  (Rating: 5)",
+            "The Hunger Games (Rating: 3)",
+            "Peter and the starcatchers (Rating: 4)",
             "Peter and the Shadow Thieves (Rating: 5)"
         ],
         "recommended_books": []
     },
-    "wqu2": {
+    "Lisa He": {
         "books": [
-            "To Kill a Mockingbird (Rating: 4)",
-            "Harry Potter and the Sorcerers Stone (Rating: 5)",
-            "American Born Chinese (Rating: 5)",
-            "The Martian (Rating: 3)",
-            "The Catcher in the Rye (Rating: 4)",
-            "Harry Potter and the Chamber of Secrets (Rating: 4)"
+            "The Princess Diaries (Rating: 5)",
+            "The Tell-Tale Heart (Rating: 2)",
+            "Own It (Rating: 4)",
+            "Becoming (Rating: 3)",
+            "Educated (Rating: 4)"
         ],
-        "recommended_books": [
-            {
-                "Book title": "1984",
-                "Author": "George Orwell"
-            },
-            {
-                "Book title": "Pride and Prejudice",
-                "Author": "Jane Austen"
-            },
-            {
-                "Book title": "The Great Gatsby",
-                "Author": "F. Scott Fitzgerald"
-            }
-        ]
-    },
-    "wqu3": {
-        "books": [],
         "recommended_books": []
-    },
-    "wqu4": {
-        "books": [
-            "Peter and the Shadow Thieves (Rating: 4)",
-            "Harry Potter and the Chamber of Secrets (Rating: 4)",
-            "Peter and the Starcatchers (Rating: 2)",
-            "The Hunger Games (Rating: 5)",
-            "Prodigy (Rating: 5)"
-        ],
-        "recommended_books": [
-            {
-                "Book title": "Percy Jackson & The Olympians: The Lightning Thief",
-                "Author": "Rick Riordan"
-            },
-            {
-                "Book title": "The Maze Runner",
-                "Author": "James Dashner"
-            },
-            {
-                "Book title": "Divergent",
-                "Author": "Veronica Roth"
-            }
-        ]
-    },
-    "wqu5": {
-        "books": [
-            "The Great Gatsby (Rating: 3)",
-            "Harry Potter and the Chamber of Secrets (Rating: 4)",
-            "Divergent (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "charlottes web (Rating: 4)",
-            "The Great Gatsby (Rating: 3)",
-            "Harry Potter and the Chamber of Secrets (Rating: 4)",
-            "Divergent (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "charlottes web (Rating: 4)",
-            "The Great Gatsby (Rating: 3)",
-            "Harry Potter and the Chamber of Secrets (Rating: 4)",
-            "Divergent (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "charlottes web (Rating: 4)"
-        ],
-        "recommended_books": [
-            {
-                "Book title": "To Kill a Mockingbird",
-                "Author": "Harper Lee",
-                "ISBN": "0895774356",
-                "Link": "https://openlibrary.org/works/OL3140822W"
-            },
-            {
-                "Book title": "The Catcher in the Rye",
-                "Author": "J.D. Salinger",
-                "ISBN": "9788483023655",
-                "Link": "https://openlibrary.org/works/OL3335245W"
-            },
-            {
-                "Book title": "Pride and Prejudice",
-                "Author": "Jane Austen",
-                "ISBN": "0008481997",
-                "Link": "https://openlibrary.org/works/OL66554W"
-            }
-        ]
-    },
-    "john": {
-        "books": [
-            "harry Potter and the sorcerer's stone (Rating: 2)",
-            "Things fall apart (Rating: 4)",
-            "Divergent (Rating: 3)",
-            "The Giver (Rating: 1)",
-            "Sharp Objects (Rating: 2)",
-            "Gone Girl (Rating: 4)"
-        ],
-        "recommended_books": [
-            {
-                "Book title": "To Kill a Mockingbird",
-                "Author": "Harper Lee",
-                "ISBN": "0895774356",
-                "Link": "https://openlibrary.org/works/OL3140822W"
-            },
-            {
-                "Book title": "1984",
-                "Author": "George Orwell",
-                "ISBN": "1408294222",
-                "Link": "https://openlibrary.org/works/OL11326416W"
-            },
-            {
-                "Book title": "The Catcher in the Rye",
-                "Author": "J.D. Salinger",
-                "ISBN": "9788483023655",
-                "Link": "https://openlibrary.org/works/OL3335245W"
-            }
-        ]
-    },
-    "lisa": {
-        "books": [
-            "1984  (Rating: 3)",
-            "To Kill a Mockingbird (Rating: 3)",
-            "The Catcher in the Rye (Rating: 4)",
-            "Sapiens: A Brief History of Humankind  (Rating: 5)",
-            "The Great Gatsby (Rating: 3)",
-            "The Lord of the Rings (Rating: 5)",
-            "Pride and Prejudice (Rating: 3)",
-            "The Hitchhiker's Guide to the Galaxy (Rating: 4)"
-        ],
-        "recommended_books": [
-            {
-                "Book title": "To Kill a Mockingbird",
-                "Author": "Harper Lee",
-                "ISBN": "0895774356",
-                "Link": "https://openlibrary.org/works/OL3140822W"
-            },
-            {
-                "Book title": "The Great Gatsby",
-                "Author": "F. Scott Fitzgerald",
-                "ISBN": "0785839992",
-                "Link": "https://openlibrary.org/works/OL468431W"
-            },
-            {
-                "Book title": "Pride and Prejudice",
-                "Author": "Jane Austen",
-                "ISBN": "0008481997",
-                "Link": "https://openlibrary.org/works/OL66554W"
-            }
-        ]
     }
 }

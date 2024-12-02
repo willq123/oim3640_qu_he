@@ -5,10 +5,8 @@
 </head>
 <body>
     <h1>User Similarity</h1>
-    <p>Similarity: {{ similarity['percent Similarity'] }}</p>
-    <p>Recommended Book: <strong>{{ similarity['Book title'] }}</strong> by {{ similarity['Author'] }}</p>
-    <p>ISBN: {{ similarity['ISBN'] }}</p>
-    <p><a href="{{ similarity['Link'] }}" target="_blank">View Book</a></p>
+    <p>Similarity: {{ similarity_percentage }}%</p>
+    <p>Recommended Book: {{ recommended_book }}</p>
     <a href="{{ url_for('homepage', username=username) }}"><button>Return to Homepage</button></a>
 </body>
 </html>

@@ -9,13 +9,7 @@
         <ul>
             {% for recommendation in recommendations %}
                 <li>
-                    <strong>{{ recommendation['Book title'] }}</strong> by {{ recommendation['Author'] }} 
-                    {% if recommendation['ISBN'] %}
-                        (ISBN: {{ recommendation['ISBN'] }})
-                    {% endif %}
-                    {% if recommendation['Link'] %}
-                        - <a href="{{ recommendation['Link'] }}" target="_blank">View Book</a>
-                    {% endif %}
+                    <strong>{{ recommendation['Book title'] }}</strong> by {{ recommendation['Author'] }}
                 </li>
             {% endfor %}
         </ul>
@@ -25,3 +19,4 @@
     <a href="{{ url_for('homepage', username=username) }}">Back to Homepage</a>
 </body>
 </html>
+</write_to_file>

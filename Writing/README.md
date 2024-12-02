@@ -7,7 +7,7 @@
 
 **What is the purpose of this project?**
 
--
+- Brief explanation of the project's goal.
 - Example use case or story illustrating the project's purpose.
 - Include a relevant screenshot or diagram if applicable.
 

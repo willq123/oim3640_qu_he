@@ -75,6 +75,37 @@ def check_books_in_open_library(book_title):
             return data['docs'][0]['isbn'][0] if 'isbn' in data['docs'][0] else False
     return False
 
+<<<<<<< Updated upstream
+=======
+def calculate_similarity_and_recommendation(user1_books, user2_books):
+    """
+    Calculate the similarity percentage between two users' books and generate a book recommendation.
+    """
+    # Prepare the prompt for the GPT API
+    prompt = (
+        f"User 1 has read: {user1_books}. User 2 has read: {user2_books}. "
+        "Calculate the percentage similarity based on the books read and recommend one book with the author. "
+        "Return the result in the following format: "
+        "{'percent Similarity': '%', 'Book title': 'title', 'Author': 'author name'}."
+    )
+    
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}]
+        )
+        
+        result = response['choices'][0]['message']['content']
+        
+        try:
+            result_json = json.loads(result)
+            return result_json
+        except json.JSONDecodeError as e:
+            return render_template('error.html', error=str(e))
+    except Exception as e:
+        return render_template('error.html', error=str(e))
+
+>>>>>>> Stashed changes
 @app.route('/')
 def index():
     """
@@ -119,6 +150,24 @@ def test():
             save_users(users)
             message = "User registered successfully."
         return render_template('test.html', message=message)
+    return render_template('test.html')
+
+@app.route('/gpt_test', methods=['GET', 'POST'])
+def gpt_test():
+    if request.method == 'POST':
+        user_input = request.form['user_input']
+        prompt = f"User input: {user_input}. Please respond appropriately."
+        
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}]
+            )
+            gpt_response = response['choices'][0]['message']['content']
+            return render_template('test.html', gpt_response=gpt_response)
+        except Exception as e:
+            return render_template('test.html', error=str(e))
+    
     return render_template('test.html')
 
 @app.route('/signin', methods=['GET', 'POST'])
@@ -216,6 +265,7 @@ def similarity(username):
     Prompt user for another user within the database
     After submitting, it will direct them to '/user_similarity/<username>/<other_username>'
     """
+<<<<<<< Updated upstream
     return render_template('similarity.html', username=username)
 
 @app.route('/user_similarity/<username>', methods=['GET', 'POST'])
@@ -229,6 +279,24 @@ def user_similarity(username):
     """
     return render_template('user_similarity.html', username=username)
 
+=======
+    if request.method == 'POST':
+        other_username = request.form['other_username']
+        users = load_users()
+        if other_username not in users:
+            flash("User does not exist", "error")
+            return redirect(url_for('similarity', username=username))
+        
+        user1_books = users[username]["books"]
+        user2_books = users[other_username]["books"]
+        
+        similarity_result = calculate_similarity_and_recommendation(user1_books, user2_books)
+        
+        return render_template('user_similarity.html', username=username, other_username=other_username, similarity=similarity_result)
+    
+    return render_template('similarity.html', username=username)
+
+>>>>>>> Stashed changes
 @app.route('/welcome/<username>', methods=['GET', 'POST'])
 def welcome(username):
     """

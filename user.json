@@ -11,7 +11,6 @@
             "Prodigy (Rating: 4)",
             "The Hunger Games (Rating: 4)",
             "The Hunger Games (Rating: 4)",
-<<<<<<< Updated upstream
             "The Fault in Our Stars (Rating: 5)",
             "Percy Jackson & the Olympians: The Lightning Thief (Rating: 4)"
         ],
@@ -33,27 +32,6 @@
                 "Author": "Harper Lee",
                 "ISBN": "0895774356",
                 "Link": "https://openlibrary.org/works/OL3140822W"
-=======
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "Legend  (Rating: 3)",
-            "The Hunger Games (Rating: 4)",
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "green eggs and ham (Rating: 4)",
-            "The Maze Runner (Rating: 4)"
-        ],
-        "recommended_books": [
-            {
-                "Book title": "The Hunger Games",
-                "Author": "Suzanne Collins"
-            },
-            {
-                "Book title": "Green Eggs and Ham",
-                "Author": "Dr. Seuss"
-            },
-            {
-                "Book title": "The Maze Runner",
-                "Author": "James Dashner"
->>>>>>> Stashed changes
             }
         ]
     },
@@ -81,7 +59,6 @@
             "The Maze Runner (Rating: 4)",
             "Divergent  (Rating: 5)"
         ],
-<<<<<<< Updated upstream
         "recommended_books": [
             {
                 "Book title": "The Hunger Games",
@@ -102,18 +79,5 @@
                 "Link": "https://openlibrary.org/works/OL17054790W"
             }
         ]
-=======
-        "recommended_books": []
-    },
-    "wqu8": {
-        "books": [
-            "Peter and the Shadow Thieves (Rating: 5)",
-            "The Hunger Games (Rating: 3)",
-            "green eggs and ham (Rating: 4)",
-            "Legend (Rating: 5)",
-            "Peter and the Starcatchers (Rating: 5)"
-        ],
-        "recommended_books": []
->>>>>>> Stashed changes
     }
 }

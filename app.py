@@ -43,7 +43,7 @@ def get_book_recommendations(books_with_ratings, read_books):
 
 
     prompt = (
-        f"Based on the following books and ratings: {list(zip(book_titles, book_ratings))}, "
+        f"Based on the following books and ratings (out of 5): {list(zip(book_titles, book_ratings))}, "
         f"and excluding the books the user has already read: {read_books}, "
         "recommend 3 new books in JSON format with the following structure: "
         "{'Book title': 'title', 'Author': 'author name'}. Response in JSON format and no additional text."

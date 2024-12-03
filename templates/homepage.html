@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Welcome, {{ username }}!</h1>
+    <p>If you want to look at the books you have read and the previous recommendations, click 'Another Recommendation'.</p>
     <a href="{{ url_for('more_recommendations', username=username) }}"><button>Another Recommendation</button></a>
     <a href="{{ url_for('similarity', username=username) }}"><button>Similarity</button></a>
     <a href="{{ url_for('index') }}"><button>Sign Out</button></a>

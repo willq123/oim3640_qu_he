@@ -28,5 +28,36 @@
                 "Link": "https://openlibrary.org/works/OL5735363W"
             }
         ]
+    },
+    "wqu1": {
+        "books": [
+            "1984  (Rating: 4)",
+            "The Great Gatsby (Rating: 4)",
+            "Moby Dick (Rating: 3)",
+            "The Lord of the Rings (Rating: 5)",
+            "The Hobbit (Rating: 5)",
+            "To Kill a Mockingbird (Rating: 3)",
+            "Harry Potter and the Philosopher's Stone (Rating: 5)"
+        ],
+        "recommended_books": [
+            {
+                "Book title": "Pride and Prejudice",
+                "Author": "Jane Austen",
+                "ISBN": "0008481997",
+                "Link": "https://openlibrary.org/works/OL66554W"
+            },
+            {
+                "Book title": "The Catcher in the Rye",
+                "Author": "J.D. Salinger",
+                "ISBN": "9788483023655",
+                "Link": "https://openlibrary.org/works/OL3335245W"
+            },
+            {
+                "Book title": "Brave New World",
+                "Author": "Aldous Huxley",
+                "ISBN": "5170628234",
+                "Link": "https://openlibrary.org/works/OL64468W"
+            }
+        ]
     }
 }

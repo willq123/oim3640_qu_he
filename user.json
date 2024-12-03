@@ -6,26 +6,27 @@
             "The Outsiders (Rating: 5)",
             "The Maze Runner (Rating: 5)",
             "Peter and the Starcatchers (Rating: 4)",
-            "The Fault in Our Stars (Rating: 4)"
+            "The Fault in Our Stars (Rating: 4)",
+            "To Kill a Mockingbird (Rating: 5)"
         ],
         "recommended_books": [
             {
-                "Book title": "To Kill a Mockingbird",
-                "Author": "Harper Lee",
-                "ISBN": "0895774356",
-                "Link": "https://openlibrary.org/works/OL3140822W"
-            },
-            {
-                "Book title": "The Great Gatsby",
-                "Author": "F. Scott Fitzgerald",
-                "ISBN": "0785839992",
-                "Link": "https://openlibrary.org/works/OL468431W"
+                "Book title": "Harry Potter and the Sorcerer's Stone",
+                "Author": "J.K. Rowling",
+                "ISBN": "9780439286237",
+                "Link": "https://openlibrary.org/works/OL15141632W"
             },
             {
                 "Book title": "The Hunger Games",
                 "Author": "Suzanne Collins",
                 "ISBN": "9780545114073",
                 "Link": "https://openlibrary.org/works/OL5735363W"
+            },
+            {
+                "Book title": "The Diary of a Young Girl",
+                "Author": "Anne Frank",
+                "ISBN": "8188043788",
+                "Link": "https://openlibrary.org/works/OL27294413W"
             }
         ]
     },

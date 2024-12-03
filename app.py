@@ -5,7 +5,6 @@ import openai
 import requests
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  
 
 openai.api_key = os.getenv("OPENAI_API_KEY")  
 

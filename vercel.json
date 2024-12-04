@@ -1,14 +1,32 @@
 {
     "version": 2,
     "builds": [
-        { "src": "app.py", "use": "@vercel/python" }
+        {
+            "src": "app.py",
+            "use": "@vercel/python"
+        }
     ],
     "routes": [
-        { "src": "/", "dest": "app.py" },
-        { "src": "/similarity/(.*)", "dest": "app.py" },
-        { "src": "/recommend_books/(.*)", "dest": "app.py" },
-        { "src": "/user_similarity/(.*)", "dest": "app.py" },
-        { "src": "/(.*)", "dest": "app.py" }
+        {
+            "src": "/",
+            "dest": "app.py"
+        },
+        {
+            "src": "/similarity/(.*)",
+            "dest": "app.py"
+        },
+        {
+            "src": "/recommend_books/(.*)",
+            "dest": "app.py"
+        },
+        {
+            "src": "/user_similarity/(.*)",
+            "dest": "app.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
     ],
     "env": {
         "OPENAI_API_KEY": "@openai_api_key"

@@ -19,4 +19,5 @@ Relogin: enter the username to log in.
 3. Using similarity options: input another username to compare reading tastes and get shared-interest recommendations
 
 ## FlowChart
-![Flowchart](image.jpg)
+![Flowchart Image](image.png)
+

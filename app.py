@@ -98,16 +98,12 @@ def calculate_similarity_and_recommendation(user1_books, user2_books):
         )
         
         result = response['choices'][0]['message']['content']
-        print(f"Raw result from API: {result}")  # Debugging statement
-        
         try:
             result_json = json.loads(result)
             return result_json
         except json.JSONDecodeError as e:
-            print(f"JSON Decode Error: {e}")  # Debugging statement
             return render_template('error.html', error=str(e))
     except Exception as e:
-        print(f"API Call Error: {e}")  # Debugging statement
         return render_template('error.html', error=str(e))
 
 @app.route('/')
@@ -219,10 +215,6 @@ def show_recommendations(username):
         if isbn:
             recommendation['ISBN'] = isbn
             recommendation['Link'] = link
-
-    # Debugging statement to check recommendations
-    print(f"Recommendations for {username}: {recommendations}")  # Debugging statement
-
 
     # Save recommendations to user.json
     if recommendations and isinstance(recommendations, list):

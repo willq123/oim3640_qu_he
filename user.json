@@ -60,5 +60,34 @@
                 "Link": "https://openlibrary.org/works/OL64468W"
             }
         ]
+    },
+    "wqu2": {
+        "books": [
+            "The Alchemist (Rating: 4)",
+            "Of Mice and Men (Rating: 3)",
+            "The Odyssey (Rating: 5)",
+            "Harry Potter and the Chamber of Secrets (Rating: 3)",
+            "Alice's Adventures in Wonderland (Rating: 5)"
+        ],
+        "recommended_books": [
+            {
+                "Book title": "To Kill a Mockingbird",
+                "Author": "Harper Lee",
+                "ISBN": "0895774356",
+                "Link": "https://openlibrary.org/works/OL3140822W"
+            },
+            {
+                "Book title": "1984",
+                "Author": "George Orwell",
+                "ISBN": "1408294222",
+                "Link": "https://openlibrary.org/works/OL11326416W"
+            },
+            {
+                "Book title": "Pride and Prejudice",
+                "Author": "Jane Austen",
+                "ISBN": "0008481997",
+                "Link": "https://openlibrary.org/works/OL66554W"
+            }
+        ]
     }
 }

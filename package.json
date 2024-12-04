@@ -1,0 +1,18 @@
+{
+  "name": "flask-app",
+  "version": "1.0.0",
+  "description": "A Flask application for book recommendations and user similarity.",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py"
+  },
+  "dependencies": {
+    "flask": "^2.0.0",
+    "requests": "^2.25.1",
+    "openai": "^0.27.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

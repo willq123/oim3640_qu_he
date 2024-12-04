@@ -17,3 +17,6 @@ Relogin: enter the username to log in.
 1. Using Getting recommendations option: you are able to access to the reading history, previous recommended history, and all information you have entered before, like book titles, rating, etc.
 2. Getting Recommendations -> How many new books would you like to add: You can choose 1-5 new books recommended. Then enter the corresponding numbers of books you've read from the previous recommended book lists or you read before and the system will generate more books tailored to your preference and store in your account.
 3. Using similarity options: input another username to compare reading tastes and get shared-interest recommendations
+
+## FlowChart
+![Flowchart](image.jpg)
